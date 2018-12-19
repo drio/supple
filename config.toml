@@ -1,4 +1,4 @@
-baseURL = "https://drio.github.io/supple"
+baseURL = "drio.github.io/supple/"
 languageCode = "en-us"
 title = "Supple Score"
 publishDir = "docs"
