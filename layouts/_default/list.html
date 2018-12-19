@@ -1,0 +1,24 @@
+{{ partial "header" .}}
+  <div style="margin:25px;">
+     {{ range .Pages }}
+     	<img style="padding-bottom:10px" src="/brands/{{.Params.brand}}.png" width="100px"> 
+      <h4 style="display:inline; padding-left:10px">{{.Params.model}}</h4>
+
+     	<h6>Tires: 
+        {{range .Params.tire}}
+          <span class="badge badge-pill badge-info">{{.}}</span>
+        {{end}}
+      </h6> 
+     	<h6><a href="{{.Params.youtube}}">Review link</a> ({{.Params.review_date}})</h6>
+     	<h6>Utility: {{.Params.utility}}</h6>
+     	<h6>Handling: {{.Params.handling}}</h6>
+     	<h6>Score: {{.Params.stars}}</h6>
+      <hr>
+      <p>
+        {{.Content}}
+      </p>
+      <br>
+      <br>
+     {{ end }}
+  </div>
+{{ partial "footer" .}}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ $style := resources.Get "bootstrap.css" }}
+  {{ $styleCustom := resources.Get "custom.css" }}
+  <head>
+    <meta charset="utf-8">
+		<link rel="icon" href="/favicon.png">
+    <title>PathLessPedaled Supple Score</title>
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $styleCustom.Permalink }}">
+  </head>
+  <body>
+    <div class="container">

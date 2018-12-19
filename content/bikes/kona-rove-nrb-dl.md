@@ -4,9 +4,9 @@ date: 2018-12-18T18:22:42-05:00
 draft: true
 brand: "kona"
 model: "Rove NRB DL"
-tire-size: "650b x 47"
+tire: ["650bx47"]
 youtube: https://youtu.be/JR6hXEN24wY
-review-date: "11/29/18"
+review_date: "11/29/18"
 utility: 1
 handling: 7
 stars: 4.5
